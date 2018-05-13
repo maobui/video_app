@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_half">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_thumnail"
+            android:layout_width="@dimen/image_thumnail_width"
+            android:layout_height="@dimen/image_thumnail_height"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_thumnail"
+            android:layout_marginLeft="@dimen/layout_margin_half"
+            android:layout_toRightOf="@+id/img_thumnail"
+            android:text="Title"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_thumnail"
+            android:layout_marginLeft="@dimen/layout_margin_half"
+            android:layout_toRightOf="@+id/img_thumnail"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Description" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

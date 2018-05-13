@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_margin_half">8dp</dimen>
+    <dimen name="image_thumnail_width">120dp</dimen>
+    <dimen name="image_thumnail_height">90dp</dimen>
+    <dimen name="padding_half">8dp</dimen>
+</resources>
